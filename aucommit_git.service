@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto Commit Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c '/home/matrix/Documents/documentation/inotifywait.sh'
+
+[Install]
+WantedBy=multi-user.target
