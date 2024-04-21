@@ -26,4 +26,4 @@ jobs:
           git config --local user.email "e.matrixd@e.ematrixd.ru"
           git config --local user.name "ematrixd"
           git commit -m "autocommit: change doc file" || exit 0
-
+          git push origin main # Эта строка добавляет команду для автоматической отправки изменений в удаленный репозиторий.
