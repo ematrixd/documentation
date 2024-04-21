@@ -24,7 +24,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --local user.email "e.matrixd@e.ematrixd.ru"
-          git config --local user.name "matrixd"
+          git config --local user.name "ematrixd"
           git commit -m "autocommit: change doc file" || exit 0
 
       - name: Push changes to remote repository
