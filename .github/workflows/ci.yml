@@ -30,4 +30,4 @@ jobs:
       - name: Push changes to remote repository
         if: success() && github.event_name == 'push' # Выполнять только при push в репозиторий
         run: |
-          git push origin main
+          git push https://$GH_TOKEN@github.com/ematrixd/documentation.git main
