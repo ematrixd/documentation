@@ -1,0 +1,33 @@
+name: Auto Commit on File Change
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  watch:
+    paths:
+      - '**/*.md' # Следить за изменениями файлов с расширением .md
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Add changed files to git
+        run: |
+          git add .
+          git status
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "e.matrixd@e.ematrixd.ru"
+          git config --local user.name "matrixd"
+          git commit -m "autocommit: change doc file" || exit 0
+
+      - name: Push changes to remote repository
+        if: success() && github.event_name == 'push' # Выполнять только при push в репозиторий
+        run: |
+          git push origin main
