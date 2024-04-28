@@ -25,4 +25,9 @@ while read -r path action file; do
         # Запускаем скрипт для автоматического коммита
         /home/matrix/Documents/documentation/autocommit.sh
     fi
+    if [[ "$file" == *.pdf ]]; then
+        echo "File '$file' $action in directory $path"  # Выводим сообщение о действии
+        # Запускаем скрипт для автоматического коммита
+        /home/matrix/Documents/documentation/autocommit.sh
+    fi
 done
