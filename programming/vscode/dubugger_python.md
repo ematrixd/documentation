@@ -33,7 +33,7 @@ ext install ms-python.python
           "pathMappings": [
               {
                   "localRoot": "${workspaceFolder}",
-                  "remoteRoot": "/home/admin/vair"
+                  "remoteRoot": "<path to remote directory>"
               }
           ]
       }
@@ -97,7 +97,7 @@ python3 -m debugpy --listen 192.168.5.136:5678 --wait-for-client -m wsgi
 #!/bin/bash
 
 # Путь к директории проекта
-PROJECT_DIR=<путь до дирректории проекта> # Пример: /home/admin/vair/
+PROJECT_DIR=<путь до дирректории проекта> #
 DESTINATION_DIR=<путь до дирректории проекта на удаленном хосте>
 HOST=root@<ip host>
 
