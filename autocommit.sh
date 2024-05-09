@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Путь к вашему репозиторию
-REPO_PATH=/home/matrix/Documents/documentation/
 
 # Переход в директорию с репозиторием
 cd $REPO_PATH

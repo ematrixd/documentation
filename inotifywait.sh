@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Путь к директории documentation
-DOCUMENTATION_DIR=/home/matrix/Documents/documentation/
+DOCUMENTATION_DIR=/home/matrix/Documents/
 
 # Переход в директорию documentation
 cd "$DOCUMENTATION_DIR" || exit
@@ -13,21 +13,20 @@ while read -r path action file; do
     if [[ "$file" == *.md ]]; then
         echo "File '$file' $action in directory $path"  # Выводим сообщение о действии
         # Запускаем скрипт для автоматического коммита
-        /home/matrix/Documents/documentation/autocommit.sh
+        /home/matrix/Documents/autocommit.sh
     fi
     if [[ "$file" == *.py ]]; then
         echo "File '$file' $action in directory $path"  # Выводим сообщение о действии
         # Запускаем скрипт для автоматического коммита
-        /home/matrix/Documents/documentation/autocommit.sh
+        /home/matrix/Documents/autocommit.sh
     fi
     if [[ "$file" == *.sh ]]; then
         echo "File '$file' $action in directory $path"  # Выводим сообщение о действии
         # Запускаем скрипт для автоматического коммита
-        /home/matrix/Documents/documentation/autocommit.sh
+        /home/matrix/Documents/autocommit.sh
     fi
     if [[ "$file" == *.pdf ]]; then
         echo "File '$file' $action in directory $path"  # Выводим сообщение о действии
         # Запускаем скрипт для автоматического коммита
-        /home/matrix/Documents/documentation/autocommit.sh
     fi
 done
