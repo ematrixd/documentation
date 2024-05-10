@@ -1,4 +1,6 @@
-## Приложения для exetentions, настройка gnome
+## Приложения для extentions, настройка gnome
+
+> gnome-extentions можно установить из software
 
 1. Убрать верхнее меню
 ```
