@@ -17,4 +17,7 @@ sudo dnf update --enablerepo=updates-testing --enablerepo=rpmfusion-free-updates
 3. Установка небходимых пакетов для камеры
 ```json
 sudo dnf install --enablerepo=updates-testing --enablerepo=rpmfusion-free-updates-testing --enablerepo=rpmfusion-nonfree-updates-testing akmod-intel-ipu6
+```
+
+> systemctl reboot
 
