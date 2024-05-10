@@ -1,12 +1,3 @@
-# Настройка токена на yandex disk
-
-> Гайд по подулючению токена  
-https://yandex.ru/dev/disk-api/doc/ru/concepts/quickstart#quickstart__oauth
-
-1. Подключение токкена по гайду
-
-2. Создаем демон для отслеживания изменений в дирректории и отправки API на yandex disk
-```json
 #!/bin/bash
 
 FILENAME="somefile.txt"
@@ -48,18 +39,3 @@ inotifywait -m -r --monitor -e modify,create,delete "$DEPLOY_DIR" |
 while read -r path action file; do
     sendFile ""$path$file""
 done
-```
-3. Создание файла сервиса systemd
-```json
-[Unit]
-Description=Auto Commit Service
-After=network.target
-
-[Service]
-Type=simple
-ExecStart=/bin/bash -c '<path to sh file>'
-
-[Install]
-WantedBy=multi-user.target
-```
-
