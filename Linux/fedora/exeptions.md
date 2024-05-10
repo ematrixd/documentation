@@ -12,4 +12,8 @@ https://extensions.gnome.org/extension/4630/no-titlebar-when-maximized/
 ```
 > Дополнительная настройка не требуется. (работает на fedora 40)
 
-3. Для оконного менджера
+3. Grid для оконного менджера
+```
+https://extensions.gnome.org/extension/4548/tactile/
+```
+> Для использования нажать win + t
