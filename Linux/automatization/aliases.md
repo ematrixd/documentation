@@ -1,3 +1,6 @@
+> Создавать alias в файле .bash_aliases, в домашней дирректории
+> После добавления/изменения нового alias перезапустить bashrc (source ~/.bashrc)
+
 > Подключение шары
 ```
 alias mount_share="sudo mount -t nfs <ip>:<path_share> <path_mount>"
